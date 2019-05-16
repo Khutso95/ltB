@@ -12,6 +12,7 @@ class FindExamsTest(unittest.TestCase):
 		self.assertDictEqual(FE.getCoursesForLects("lectlist.csv"), Dict)
 	
 	def test_getExams(self):
+		"""comparing two dictionaries"""
 		MyDict = {'ELEN4013': ('2020-06-01', 'SHWWB')}
 		self.assertDictEqual(FE.getExams('examlist.csv'),MyDict)
 	def test_getTimeTable(self):
